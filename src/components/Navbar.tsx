@@ -1,41 +1,21 @@
 import React from 'react'
-
-export const Navbar = () => {
-
-    const links = [
-        {
-            title: "Guide",
-            href: "#",
-        },
-        {
-            title: "Pricing",
-            href: "#",
-        },
-          {
-            title: "Login",
-            href: "#",
-        },
+import { Link } from 'react-router-dom';
 
 
-    ]
-  return (
-    <div className='navbar-foot'>
-        <div className='logo'>
-            Fintech
-        </div>
-
-        <div className='links'>
-            { links.map((link, idx ) => (
-                <a className='links-items' key={link.title} href={link.href} >
-                    {link.title}
-                    </a>
-            ))}
-
-            <div>
-                <button className='btn'>Get Started</button>
-            </div>
-        </div>
-
-    </div>
+const Navbar = () => {
+  return (  
+    <div className="flex items-center justify-between py-1 px-1">
+        <Link to="/">
+        <img src="/finta-logo-light.svg"
+        draggable={false} 
+        loading="lazy"
+        height={100}
+        width={100}
+        alt="logo"
+        />
+        </Link>
+        Navbar</div>
   )
 }
+
+export default Navbar

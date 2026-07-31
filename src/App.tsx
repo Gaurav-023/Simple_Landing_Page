@@ -1,17 +1,17 @@
 import React from "react";
-import { Container } from "./components/containter.js";
-import { Navbar } from "./components/Navbar.js";
+import { Container } from "./components/containter";
+import  Navbar  from "./components/Navbar";
 import { Hero } from "./components/Hero.js";
 
 const App = () => {
 
-  return <div className='layout'>
-    <Container>
+  return (
+    <Container className="flex items-center justify-center h-screen">
+  Hello world
 <Navbar />
-<Hero />
-    </Container>
 
-    </div>;
-};
+    </Container>
+  );
+};  
 
 export default App;

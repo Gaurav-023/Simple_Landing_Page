@@ -1,16 +1,18 @@
 import React from "react";
 import { Container } from "./components/containter";
 import  Navbar  from "./components/Navbar";
-import { Hero } from "./components/Hero.js";
+// import { Hero } from "./components/Hero.js";
 
 const App = () => {
 
-  return (
-    <Container className="flex items-center justify-center h-screen">
-  Hello world
-<Navbar />
+  return ( 
+    <div className= "flex flex-col items-center h-screen relative bg-blue-50">
 
+
+    <Container>
+<Navbar />
     </Container>
+        </div>
   );
 };  
 
